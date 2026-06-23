@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Greeter</title>
+</head>
+<body>
+
+  <h2>Student Greeter</h2>
+
+  <label for="nameInput">Enter your name:</label><br>
+  <input type="text" id="nameInput" placeholder="Your name here"><br><br>
+
+  <button onclick="greetStudent()">Greet Me!</button>
+
+  <p id="greetingText"></p>
+
+  <script>
+    function greetStudent() {
+      const name = document.getElementById('nameInput').value.trim();
+      if (name) {
+        document.getElementById('greetingText').textContent = 'Welcome, ' + name + '!';
+      }
+    }
+  </script>
+
+</body>
+</html>
